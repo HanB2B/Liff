@@ -75,11 +75,14 @@
     }
 
     function getEnvironment() {
+      document.getElementByUD("os").append(liff.getOS())
+      document.getElementByID("language").append(liff.getLanguage())
+     
     }
 
     async function main() {
       await liff.init({ liffId: "1656317018-J4DYl4xX" })
-      // getEnvironment()
+      getEnvironment()
       // getUserProfile()
       // getContext()
       // getFriendship()
